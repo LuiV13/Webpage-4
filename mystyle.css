@@ -14,18 +14,46 @@
 body{
   display: flex;
   justify-content: center;
-  background: repeating-linear-gradient(
-  45deg,
-  #33c0cd,
-  #33c0cd 10px,
-  #1f858e 10px,
-  #1f858e 20px
-);
+  background-image: linear-gradient(red,yellow );
 }
-
 h1 {
   font-family: Teko;
+  font-size: 50px;
+  text-align: center;
+  color:#FFF;
+  text-decoration: overline;
+  text-transform: full-width;
+  text-shadow: 5px 7.5px 10px #000;
+}
 
+h2 {
+  font-family: Teko;
+  font-size: 40px;
+  color: #FFF;
+}
+
+h3 {
+  font-family: Teko;
+  font-size: 40px;
+  color: #FFF;
+}
+
+h4 {
+  font-family: Teko;
+  font-size: 40px;
+  color:#FFF;
+}
+
+h5 {
+  font-family: Teko;
+  font-size: 40px;
+  color:#FFF;
+}
+
+h6 {
+  font-family: Teko;
+  font-size: 40px;
+  color:#FFF;
 }
 #container{
 position: relative;
@@ -41,16 +69,16 @@ width: 500px;
   #hero-image img {
     width: 450px;
     height: 250px;
-    box-shadow: 10px 10px 15px #000;
   }
 
 #content-box{
   background: #FFF;
   padding: 15px;
   margin-bottom: 15px;
-  background: #ff8a00;
+  background: #4d4d4d;
   box-shadow: 10px 10px 5px #000;
 }
+
 
 #slider {
     overflow: hidden;
@@ -70,27 +98,27 @@ width: 500px;
   20% {
       left: 0;
   }
-    25% {
+  25% {
       left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: 300%;
-    }
-    100% {
-        left: 300%;
-    }
+  }
+  45% {
+      left: -100%;
+  }
+  50% {
+      left: -200%;
+  }
+  70%{
+      left: -200%;
+  }
+  75% {
+      left: -300%;
+  }
+  95% {
+      left: -300%;
+  }
+  100% {
+      left: -400%;
+  }
 }
 
 #slider figure {
@@ -115,13 +143,15 @@ li {
 
 a {
   font-family: Teko2;
-  text-decoration: none;
+  font-size: 18px;
+  text-decoration:line-through;
  color: #FFF;
   padding: 5px;
+  text-shadow: 3px 7.5px 10px #000;
 
 }
 
 a:hover{
-  background: #CCC;
-  color: #000;
+  background: #000;
+  color: #FFF;
 }
