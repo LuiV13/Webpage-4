@@ -1,0 +1,127 @@
+/* FONTS *****************************************/
+
+@font-face {
+  font-family: Teko;
+  src: url(fonts/Teko/Teko-Bold.ttf);
+}
+
+@font-face {
+  font-family: Teko2;
+  src: url(fonts/Teko/Teko-Bold.ttf);
+}
+
+/*******************************/
+body{
+  display: flex;
+  justify-content: center;
+  background: repeating-linear-gradient(
+  45deg,
+  #33c0cd,
+  #33c0cd 10px,
+  #1f858e 10px,
+  #1f858e 20px
+);
+}
+
+h1 {
+  font-family: Teko;
+
+}
+#container{
+position: relative;
+top: 100px;
+width: 500px;
+}
+
+#hero-image {
+  display: flex;
+  justify-content: center;
+  }
+
+  #hero-image img {
+    width: 450px;
+    height: 250px;
+    box-shadow: 10px 10px 15px #000;
+  }
+
+#content-box{
+  background: #FFF;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #ff8a00;
+  box-shadow: 10px 10px 5px #000;
+}
+
+#slider {
+    overflow: hidden;
+    padding-top: 5px;
+
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+      left: 0;
+  }
+  20% {
+      left: 0;
+  }
+    25% {
+      left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: 300%;
+    }
+    100% {
+        left: 300%;
+    }
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+ul {
+position: relative;
+margin: 25px;
+list-style-type: none;
+padding: 0px;
+display: flex;
+justify-content: center;
+}
+
+li {
+  margin: 10px;
+}
+
+a {
+  font-family: Teko2;
+  text-decoration: none;
+ color: #FFF;
+  padding: 5px;
+
+}
+
+a:hover{
+  background: #CCC;
+  color: #000;
+}
